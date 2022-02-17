@@ -6,18 +6,28 @@
     <body>
         <div class="container">
             <div class="card" th:each="pedido : ${pedidos}">
-                <div class="card-header" th:text="${pedido.nomeProduto}">Nome do produto</div>
-                <div>Valor: <span th:text="${pedido.valorNegociado}">200,99</span></div>
-                <div>Data da entrega: <span th:text="${pedido.dataEntrega}">10/12/2023</span></div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-8 mb-3">
+                            <div class="card-header" th:text="${pedido.nomeProduto}">Nome do produto</div>
 
-                <div>Produto</div>
-                <div><input class="form-control" th:value="${pedido.urlProduto}" value="url do produto"/></div>
+                            <div class="row">
+                                <div class="col-md-5">Valor: <span th:text="${pedido.valorNegociado}">200,99</span></div>
+                                <div class="col-md-7">Data da entrega: <span th:text="${pedido.dataEntrega}">10/12/2023</span></div>
+                            </div>
 
-                <div>Descrição</div>
-                <div><textarea class="form-control" th:text="${pedido.descricao}">Descrição do pedito</textarea></div>
+                            <div>Produto</div>
+                            <div><input class="form-control" th:value="${pedido.urlProduto}" value="url do produto"/></div>
 
-                <div>
-                    <img th:src="${pedido.urlImagem}" src=""/>
+                            <div>Descrição</div>
+                            <div><textarea class="form-control" th:text="${pedido.descricao}">Descrição do pedito</textarea></div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div>
+                                <img class="img-thumbnail" th:src="${pedido.urlImagem}" src=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
