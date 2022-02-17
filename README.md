@@ -1,4 +1,4 @@
-# S:maple_leaf: pring MVC: Crie um web app com Thymeleaf e Bootstrap :maple_leaf:
+# :maple_leaf: Spring MVC: Crie um web app com Thymeleaf e Bootstrap :maple_leaf:
 
 
 ## :maple_leaf: Faça esse curso de Testes em Java :maple_leaf:
