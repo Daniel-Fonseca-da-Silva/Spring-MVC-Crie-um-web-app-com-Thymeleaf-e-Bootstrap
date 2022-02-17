@@ -1,0 +1,5 @@
+docker pull mariadb:10.4 -> Get image from dock
+docker run --name mariadb -e MYSQL_ROOT_PASSWORD=mariadb -p 3306:3306 -d docker.io/library/mariadb:10.4 -> configure the container with name mariadb, port 3306 and password mariadb with username root
+docker start mariadb -> Start the container
+docker ps -> Check if container is running
+docker stop mariadb Stop the container
