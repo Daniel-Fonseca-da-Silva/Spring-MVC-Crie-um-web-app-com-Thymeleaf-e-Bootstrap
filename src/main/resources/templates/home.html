@@ -2,8 +2,25 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+        <style>
+            .logo-container {
+                background-color: #47bcff;
+                color: #FFF;
+            }
+            .logo {
+                font-family: 'Handlee', cursive;
+                font-size: 2.5rem;
+            }
+        </style>
     </head>
     <body>
+
+        <div class="logo-container mb-3 p-3 d-flex justify-content-between">
+            <span class="logo">Mudi</span>
+            <span class="mt-3">Login</span>
+        </div>
+
         <div class="container">
 
             <div class="jumbotron mb-0" >
@@ -20,7 +37,7 @@
                 <a href="/pedido/formulario"><button class="btn btn-outline-secondary my-2 my-sm-0">Novo</button></a>
             </nav>
 
-            <div class="card" th:each="pedido : ${pedidos}">
+            <div class="card mb-3" th:each="pedido : ${pedidos}">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12 col-sm-8 mb-3">
