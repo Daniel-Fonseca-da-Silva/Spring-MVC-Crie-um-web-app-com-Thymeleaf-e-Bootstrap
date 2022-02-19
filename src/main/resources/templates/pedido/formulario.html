@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron mb-0" >
+                <h1 class="display-4">Novo Pedido</h1>
+            </div>
+        </div>
+
+        <form action="/pedido/novo" method="post">
+            <div>
+                <label for="nomeProduto">Produto</label>
+                <input name="nomeProduto" placeholder="Nome do produto"/>
+                <small>Informe o nome do produto.</small>
+            </div>
+            <div>
+                <label for="urlProduto">Url</label>
+                <input name="urlProduto" placeholder="Url do produto"/>
+                <small>Busque em um site o produto que desejar e cole aqui.</small>
+            </div>
+            <div>
+                <label for="urlImagem">Imagem</label>
+                <input name="urlImagem" placeholder="Url da imagem"/>
+                <small>Busque em um site uma boa imagem do produto que desejar e cole aqui.</small>
+            </div>
+            <div>
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" placeholder="Adiciona detalhes sobre o produto"></textarea>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+    </body>
+</html>
