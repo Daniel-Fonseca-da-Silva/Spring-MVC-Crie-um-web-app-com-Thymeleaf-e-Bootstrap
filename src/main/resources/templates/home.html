@@ -5,6 +5,21 @@
     </head>
     <body>
         <div class="container">
+
+            <div class="jumbotron mb-0" >
+                <h1 class="display-4">Meus Pedidos</h1>
+            </div>
+
+            <nav class="navbar navbar-expand navbar-light bg-light d-flex justify-content-between mb-3">
+                <nav class="navbar-nav">
+                    <a class="nav-item nav-link active" href="">Todos</a>
+                    <a class="nav-item nav-link" href="">Aguardando</a>
+                    <a class="nav-item nav-link" href="">Aprovado</a>
+                    <a class="nav-item nav-link" href="">Entregue</a>
+                </nav>
+                <a href="/pedido/formulario"><button class="btn btn-outline-secondary my-2 my-sm-0">Novo</button></a>
+            </nav>
+
             <div class="card" th:each="pedido : ${pedidos}">
                 <div class="card-body">
                     <div class="row">
