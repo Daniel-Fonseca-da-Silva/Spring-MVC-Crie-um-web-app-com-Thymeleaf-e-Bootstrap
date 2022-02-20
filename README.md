@@ -1,7 +1,7 @@
 # :maple_leaf: Spring MVC: Crie um web app com Thymeleaf e Bootstrap :maple_leaf:
 
 
-## :maple_leaf: Faça esse curso de Testes em Java :maple_leaf:
+## :maple_leaf: Faça esse curso de Java para Web e: :maple_leaf:
 
 - :fallen_leaf: Conheça o padrão MVC com o Spring MVC :fallen_leaf:
 - :fallen_leaf: Use o Spring Data para persistência :fallen_leaf:
