@@ -28,8 +28,8 @@
                                 <div th:case="'ENTREGUE'" class="card-header alert-primary" th:text="${pedido.nomeProduto}">Nome do produto</div>
                             </th:block>
                             <div class="row">
-                                <div class="col-md-5">Valor: <span th:text="${pedido.valorNegociado}">200,99</span></div>
-                                <div class="col-md-7">Data da entrega: <span th:text="${pedido.dataEntrega}">10/12/2023</span></div>
+                                <div class="col-md-5">Valor: <span th:if="${pedido.valorNegociado} != null" th:text="${'R$ ' + #numbers.formatDecimal(pedido.valorNegociado,3,'POINT',2,'COMMA')}">200,99</span></div>
+                                <div class="col-md-7">Data da entrega: <span th:text="${#temporals.format(pedido.dataEntrega,'dd/MM/yyyy')}">10/12/2023</span></div>
                             </div>
 
                             <div>Produto</div>
