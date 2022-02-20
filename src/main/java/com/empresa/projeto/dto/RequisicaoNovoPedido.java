@@ -1,6 +1,7 @@
 package com.empresa.projeto.dto;
 
 import com.empresa.projeto.model.Pedido;
+import com.empresa.projeto.model.StatusPedido;
 
 import javax.validation.constraints.NotBlank;
 
@@ -52,6 +53,7 @@ public class RequisicaoNovoPedido {
         pedido.setUrlImagem(urlImagem);
         pedido.setUrlProduto(urlProduto);
         pedido.setDescricao(descricao);
+        pedido.setStatus(StatusPedido.AGUARDANDO);
 
         return pedido;
     }
